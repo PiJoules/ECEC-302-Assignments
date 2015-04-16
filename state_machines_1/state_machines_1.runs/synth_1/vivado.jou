@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Wed Apr 15 18:05:36 2015
+# Process ID: 6292
+# Log file: C:/Users/lc599/state_machines_1/state_machines_1.runs/synth_1/sm1.vds
+# Journal file: C:/Users/lc599/state_machines_1/state_machines_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source sm1.tcl

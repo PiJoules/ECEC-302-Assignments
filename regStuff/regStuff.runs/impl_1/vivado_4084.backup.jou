@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Wed Apr 01 17:26:16 2015
+# Process ID: 5708
+# Log file: C:/Users/pcc37/regStuff/regStuff.runs/impl_1/reg4.vdi
+# Journal file: C:/Users/pcc37/regStuff/regStuff.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source reg4.tcl -notrace

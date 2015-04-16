@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Tue Apr 14 16:50:24 2015
+# Process ID: 6492
+# Log file: C:/Users/lc599/register_bank_stage_2/register_bank_stage_2.runs/impl_1/reg_v2.vdi
+# Journal file: C:/Users/lc599/register_bank_stage_2/register_bank_stage_2.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source reg_v2.tcl -notrace

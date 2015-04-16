@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Tue Apr 07 15:10:11 2015
+# Process ID: 8716
+# Log file: C:/Users/lc599/cascading_registers/cascading_registers.runs/impl_1/cascade_reg4.vdi
+# Journal file: C:/Users/lc599/cascading_registers/cascading_registers.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source cascade_reg4.tcl -notrace

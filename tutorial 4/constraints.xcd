@@ -1,0 +1,27 @@
+# clock
+set_property PACKAGE_PIN W5 [get_ports ck]							
+	set_property IOSTANDARD LVCMOS33 [get_ports ck]
+	
+# buttons
+set_property PACKAGE_PIN T17 [get_ports ld_en]						
+	set_property IOSTANDARD LVCMOS33 [get_ports ld_en]
+	
+## Switches
+set_property PACKAGE_PIN V17 [get_ports {x[0]}]					
+    set_property IOSTANDARD LVCMOS33 [get_ports {x[0]}]
+set_property PACKAGE_PIN V16 [get_ports {x[1]}]                    
+    set_property IOSTANDARD LVCMOS33 [get_ports {x[1]}]
+set_property PACKAGE_PIN W16 [get_ports {x[2]}]                    
+    set_property IOSTANDARD LVCMOS33 [get_ports {x[2]}]
+set_property PACKAGE_PIN W17 [get_ports {x[3]}]                    
+    set_property IOSTANDARD LVCMOS33 [get_ports {x[3]}]
+    
+## LEDs
+set_property PACKAGE_PIN U16 [get_ports {z[0]}]                    
+    set_property IOSTANDARD LVCMOS33 [get_ports {z[0]}]
+set_property PACKAGE_PIN E19 [get_ports {z[1]}]                    
+    set_property IOSTANDARD LVCMOS33 [get_ports {z[1]}]
+set_property PACKAGE_PIN U19 [get_ports {z[2]}]                    
+    set_property IOSTANDARD LVCMOS33 [get_ports {z[2]}]
+set_property PACKAGE_PIN V19 [get_ports {z[3]}]                    
+    set_property IOSTANDARD LVCMOS33 [get_ports {z[3]}]
