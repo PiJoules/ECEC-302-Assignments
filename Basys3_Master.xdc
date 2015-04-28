@@ -4,8 +4,8 @@
 ## - rename the used ports (in each line, after get_ports) according to the top level signal names in the project
 
 ## Clock signal
-#set_property PACKAGE_PIN W5 [get_ports clk]							
-	#set_property IOSTANDARD LVCMOS33 [get_ports clk]
+set_property PACKAGE_PIN W5 [get_ports ck]							
+	set_property IOSTANDARD LVCMOS33 [get_ports ck]
 	#create_clock -add -name sys_clk_pin -period 10.00 -waveform {0 5} [get_ports clk]
  
 ## Switches
@@ -44,14 +44,14 @@
  
 
 ## LEDs
-#set_property PACKAGE_PIN U16 [get_ports {led[0]}]					
-	#set_property IOSTANDARD LVCMOS33 [get_ports {led[0]}]
-#set_property PACKAGE_PIN E19 [get_ports {led[1]}]					
-	#set_property IOSTANDARD LVCMOS33 [get_ports {led[1]}]
-#set_property PACKAGE_PIN U19 [get_ports {led[2]}]					
-	#set_property IOSTANDARD LVCMOS33 [get_ports {led[2]}]
-#set_property PACKAGE_PIN V19 [get_ports {led[3]}]					
-	#set_property IOSTANDARD LVCMOS33 [get_ports {led[3]}]
+set_property PACKAGE_PIN U16 [get_ports {z[0]}]					
+	set_property IOSTANDARD LVCMOS33 [get_ports {z[0]}]
+set_property PACKAGE_PIN E19 [get_ports {z[1]}]					
+    set_property IOSTANDARD LVCMOS33 [get_ports {z[1]}]
+set_property PACKAGE_PIN U19 [get_ports {z[2]}]					
+	set_property IOSTANDARD LVCMOS33 [get_ports {z[2]}]
+set_property PACKAGE_PIN V19 [get_ports {z[3]}]					
+	set_property IOSTANDARD LVCMOS33 [get_ports {z[3]}]
 #set_property PACKAGE_PIN W18 [get_ports {led[4]}]					
 	#set_property IOSTANDARD LVCMOS33 [get_ports {led[4]}]
 #set_property PACKAGE_PIN U15 [get_ports {led[5]}]					
@@ -108,14 +108,14 @@
 
 
 ##Buttons
-#set_property PACKAGE_PIN U18 [get_ports btnC]						
-	#set_property IOSTANDARD LVCMOS33 [get_ports btnC]
+set_property PACKAGE_PIN U18 [get_ports C]						
+	set_property IOSTANDARD LVCMOS33 [get_ports C]
 #set_property PACKAGE_PIN T18 [get_ports btnU]						
 	#set_property IOSTANDARD LVCMOS33 [get_ports btnU]
-#set_property PACKAGE_PIN W19 [get_ports btnL]						
-	#set_property IOSTANDARD LVCMOS33 [get_ports btnL]
-#set_property PACKAGE_PIN T17 [get_ports btnR]						
-	#set_property IOSTANDARD LVCMOS33 [get_ports btnR]
+set_property PACKAGE_PIN W19 [get_ports L]						
+	set_property IOSTANDARD LVCMOS33 [get_ports L]
+set_property PACKAGE_PIN T17 [get_ports R]						
+	set_property IOSTANDARD LVCMOS33 [get_ports R]
 #set_property PACKAGE_PIN U17 [get_ports btnD]						
 	#set_property IOSTANDARD LVCMOS33 [get_ports btnD]
  

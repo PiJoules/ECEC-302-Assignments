@@ -1,0 +1,48 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\modeltech64_10.1c\examples
+T_opt
+VjDCkAmJj7ka^]o>go1HbO1
+04 12 3 work serial_adder beh 1
+=1-5cf9dd6e14b5-55369d8a-282-1990
+o-quiet -auto_acc_if_foreign -work work
+n@_opt
+OL;O;10.1c;51
+Z1 dC:\modeltech64_10.1c\examples
+Eserial_adder
+Z2 w1429644035
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\Users\lc599\modelsim_projects
+Z6 8C:/Users/lc599/modelsim_projects/serial_add.vhd
+Z7 FC:/Users/lc599/modelsim_projects/serial_add.vhd
+l0
+L4
+VZgE5bYJi9@:>KHKJHomIQ3
+!s100 a[SRA=;I;c95RLgcVm9Mc1
+Z8 OL;C;10.1c;51
+32
+!i10b 1
+Z9 !s108 1429645132.436000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|C:/Users/lc599/modelsim_projects/serial_add.vhd|
+Z11 !s107 C:/Users/lc599/modelsim_projects/serial_add.vhd|
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1
+Abeh
+R3
+R4
+Z14 DEx4 work 12 serial_adder 0 22 ZgE5bYJi9@:>KHKJHomIQ3
+l17
+L13
+Z15 VY@PH9YM<^Zh62=O:YdXYF0
+Z16 !s100 <T4bz_<BWd@0Xl[bU<0B11
+R8
+32
+!i10b 1
+R9
+R10
+R11
+R12
+R13
