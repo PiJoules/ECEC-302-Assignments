@@ -1,0 +1,79 @@
+Library ieee;
+Use ieee.std_logic_1164.all;
+Entity eq_wt_seq_detector is
+  Generic (n : natural := 2); -- specifiable parameter (default to 4)
+  Port (
+        x, y : in std_logic_vector(n-1 downto 0);
+        z: out std_logic_vector(1 downto 0);
+        reset, ck: in std_logic
+  );
+End eq_wt_seq_detector;
+
+Architecture behav of eq_wt_seq_detector is
+  --Signal temp : std_logic_vector(n-1 downto 0); -- holds the input
+  signal temp : std_logic_vector(1 downto 0);
+  
+  Begin -- architecture body 
+  
+--  Process(ck) -- process runs when clock signal changes
+--    begin
+--      
+--    If ck = '1' and ck'event then -- This is the rising edge of the clock 
+--      case sel is
+--       when no_op => null;
+--       when load => temp <= x;
+--       when shift =>
+--        for i in n-2 downto 0 loop
+--          temp(i) <= temp (i+1); -- temp(i) refers to the i-th bit of temp
+--        end loop;
+--      end case; 
+--    end if;
+--  end process;
+--  
+--  z <= temp(0); -- concurrent statement wiring internal signal to output 
+
+  process (ck)
+    variable xweight : integer := 0;
+    variable yweight : integer := 0;
+    
+    begin
+      
+    if ck = '1' and ck'event then
+        if reset = '1' then
+          temp <= "00";
+          --z <= temp;
+        else
+          temp <= "01";
+          for i in 0 to n-1 loop
+              if x(i) = '1' then
+                xweight := xweight + 1;
+              end if;
+              if y(i) = '1' then
+                yweight := yweight + 1;
+              end if;
+          end loop;
+          if xweight = yweight then
+            case temp is
+              when "00" =>
+                temp <= "01";
+              when "01" =>
+                temp <= "10";
+              when "10" =>
+                temp <= "11";
+              when "11" =>
+                temp <= "11";
+              when others =>
+              temp <= "00";
+            end case;
+          else
+            temp <= "11";
+            --z <= temp;
+          end if;
+        end if;
+      --z <= temp;
+    end if;
+  end process;
+  
+  z <= temp;
+  
+end behav;

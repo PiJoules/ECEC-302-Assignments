@@ -1,0 +1,17 @@
+C:/Users/lc599/eq_wt_seq_detector.vhd {1 {vcom -work work -2002 -explicit -vopt C:/Users/lc599/eq_wt_seq_detector.vhd
+Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity eq_wt_seq_detector
+-- Compiling architecture behav of eq_wt_seq_detector
+
+} {} {}} C:/Users/lc599/eq_wt_seq_detector_10.vhd {1 {vcom -work work -2002 -explicit -vopt C:/Users/lc599/eq_wt_seq_detector_10.vhd
+Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity eq_wt_seq_detector_10
+-- Compiling architecture struc of eq_wt_seq_detector_10
+
+} {} {}}

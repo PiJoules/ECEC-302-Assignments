@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Tue May 05 16:04:44 2015
+# Process ID: 6080
+# Log file: C:/Users/lc599/adder3/adder3.runs/impl_1/adder_test_bench.vdi
+# Journal file: C:/Users/lc599/adder3/adder3.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source adder_test_bench.tcl -notrace

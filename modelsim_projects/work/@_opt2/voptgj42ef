@@ -1,0 +1,193 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\modeltech64_10.1c\examples
+T_opt
+VjDCkAmJj7ka^]o>go1HbO1
+04 12 3 work serial_adder beh 1
+=1-5cf9dd6e14b5-55369d8a-282-1990
+Z1 o-quiet -auto_acc_if_foreign -work work
+n@_opt
+Z2 OL;O;10.1c;51
+Z3 dC:\modeltech64_10.1c\examples
+T_opt1
+V0djBeJU@fMYQfA8hZJ0DM0
+04 6 5 work sh_reg behav 1
+=1-5cf9dd6e1e87-553fd584-66-1fec
+R1
+n@_opt1
+R2
+R3
+T_opt2
+V4Y3VAH^SjjSY`DcV^2efQ2
+04 7 5 work control behav 1
+=1-90b11c829d2b-554000ef-bf-1b0c
+R1
+n@_opt2
+R2
+Eadder
+Z4 w1430247708
+Z5 DPx4 work 7 p1_pack 0 22 8z_SST5Wa;NK=o>=;GGeD1
+Z6 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z7 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z8 dC:\Users\lc599\modelsim_projects
+Z9 8C:/Users/lc599/modelsim_projects/adder.vhd
+Z10 FC:/Users/lc599/modelsim_projects/adder.vhd
+l0
+L4
+V4NkJEj:1Pd^K72zLj]4`P0
+Z11 OL;C;10.1c;51
+32
+Z12 !s108 1430257877.276000
+Z13 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|C:/Users/lc599/modelsim_projects/adder.vhd|
+Z14 !s107 C:/Users/lc599/modelsim_projects/adder.vhd|
+Z15 o-work work -2002 -explicit
+Z16 tExplicit 1
+!s100 3JhQKFUK=1eL6Ma=aW_J_2
+!i10b 1
+Astruc
+R5
+R6
+R7
+DEx4 work 5 adder 0 22 4NkJEj:1Pd^K72zLj]4`P0
+l34
+L11
+Vfh3gD96TOJ?hbN5=eUMCL0
+R11
+32
+R12
+R13
+R14
+R15
+R16
+!s100 GQ4UDACzdhO;S@B8N1icS0
+!i10b 1
+Econtrol
+Z17 w1430257870
+R5
+R6
+R7
+R8
+Z18 8C:/Users/lc599/modelsim_projects/control.vhd
+Z19 FC:/Users/lc599/modelsim_projects/control.vhd
+l0
+L4
+V7M`cnOO1Y?;cL8]5jDObk0
+R11
+32
+Z20 !s108 1430257877.116000
+Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|C:/Users/lc599/modelsim_projects/control.vhd|
+Z22 !s107 C:/Users/lc599/modelsim_projects/control.vhd|
+R15
+R16
+!s100 CS@@en3Em64bNF@NI<Dgg1
+!i10b 1
+Abehav
+R5
+R6
+R7
+DEx4 work 7 control 0 22 7M`cnOO1Y?;cL8]5jDObk0
+l12
+L9
+VT>1NG[J?UgmM7kL0]zMhl2
+R11
+32
+R20
+R21
+R22
+R15
+R16
+!s100 k<KnM7dRnzSRnSfW?o9mK0
+!i10b 1
+Pp1_pack
+R6
+R7
+w1430246010
+R8
+8C:/Users/lc599/modelsim_projects/p1_pack.vhd
+FC:/Users/lc599/modelsim_projects/p1_pack.vhd
+l0
+L3
+V8z_SST5Wa;NK=o>=;GGeD1
+R11
+32
+R15
+R16
+!s100 oQY[>];;20Z>L68IR19bf1
+!i10b 1
+!s108 1430257876.871000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|C:/Users/lc599/modelsim_projects/p1_pack.vhd|
+!s107 C:/Users/lc599/modelsim_projects/p1_pack.vhd|
+Eserial_adder
+Z23 w1429645474
+R6
+R7
+R8
+Z24 8C:/Users/lc599/modelsim_projects/serial_add.vhd
+Z25 FC:/Users/lc599/modelsim_projects/serial_add.vhd
+l0
+L4
+VZgE5bYJi9@:>KHKJHomIQ3
+R11
+32
+Z26 !s108 1430257876.738000
+Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|C:/Users/lc599/modelsim_projects/serial_add.vhd|
+Z28 !s107 C:/Users/lc599/modelsim_projects/serial_add.vhd|
+R15
+R16
+!s100 a[SRA=;I;c95RLgcVm9Mc1
+!i10b 1
+Abeh
+R6
+R7
+DEx4 work 12 serial_adder 0 22 ZgE5bYJi9@:>KHKJHomIQ3
+l17
+L13
+VY@PH9YM<^Zh62=O:YdXYF0
+R11
+32
+R26
+R27
+R28
+R15
+R16
+!s100 <T4bz_<BWd@0Xl[bU<0B11
+!i10b 1
+Esh_reg
+Z29 w1430246704
+R5
+R6
+R7
+R8
+Z30 8C:/Users/lc599/modelsim_projects/sh_reg.vhd
+Z31 FC:/Users/lc599/modelsim_projects/sh_reg.vhd
+l0
+L3
+VF[bK7LH<GERS=YAWUVg7a0
+R11
+32
+Z32 !s108 1430257876.970000
+Z33 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|C:/Users/lc599/modelsim_projects/sh_reg.vhd|
+Z34 !s107 C:/Users/lc599/modelsim_projects/sh_reg.vhd|
+R15
+R16
+!s100 `SA:OTIVmMLB6zl8e[bXU0
+!i10b 1
+Abehav
+R5
+R6
+R7
+DEx4 work 6 sh_reg 0 22 F[bK7LH<GERS=YAWUVg7a0
+l13
+L11
+VV;]BdCVUR1ZmTYd1@8:ST1
+R11
+32
+R32
+R33
+R34
+R15
+R16
+!s100 I[SMlZPjG3l^`G40>i9H73
+!i10b 1
