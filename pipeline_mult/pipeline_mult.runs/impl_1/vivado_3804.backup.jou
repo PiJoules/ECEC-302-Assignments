@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Tue May 12 16:30:52 2015
+# Process ID: 6252
+# Log file: C:/Users/lc599/Desktop/pipeline_mult/pipeline_mult.runs/impl_1/pipe_mult.vdi
+# Journal file: C:/Users/lc599/Desktop/pipeline_mult/pipeline_mult.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source pipe_mult.tcl -notrace

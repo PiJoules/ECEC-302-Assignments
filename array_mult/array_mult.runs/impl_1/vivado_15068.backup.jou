@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Thu May 07 13:19:06 2015
+# Process ID: 14748
+# Log file: C:/Users/pcc37/array_mult/array_mult.runs/impl_1/a_mult.vdi
+# Journal file: C:/Users/pcc37/array_mult/array_mult.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source a_mult.tcl -notrace

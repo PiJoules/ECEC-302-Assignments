@@ -1,0 +1,117 @@
+m255
+K3
+13
+cModel Technology
+dC:\modeltech64_10.1c\examples
+T_opt
+VUCePXR]BYVncM=;:1Qlbm2
+04 9 5 work pipe_mult struc 1
+=2-5cf9dd6e08d8-5552593d-170-2204
+o-quiet -auto_acc_if_foreign -work work
+n@_opt
+OL;O;10.1c;51
+Edff
+Z0 w1431457272
+Z1 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z2 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z3 dC:\Users\lc599\Desktop\pipeline_mult_modelsim
+Z4 8C:/Users/lc599/Desktop/pipeline_mult_modelsim/DFF.vhd
+Z5 FC:/Users/lc599/Desktop/pipeline_mult_modelsim/DFF.vhd
+l0
+L7
+VRaF[OHNJnSRWUNTQ@XE4K3
+Z6 OL;C;10.1c;51
+32
+Z7 !s108 1431460151.859000
+Z8 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|C:/Users/lc599/Desktop/pipeline_mult_modelsim/DFF.vhd|
+Z9 !s107 C:/Users/lc599/Desktop/pipeline_mult_modelsim/DFF.vhd|
+Z10 o-work work -2002 -explicit
+Z11 tExplicit 1
+!s100 FS7mPjIcAgW=c?8ZL023:1
+!i10b 1
+Abehavioral
+R1
+R2
+DEx4 work 3 dff 0 22 RaF[OHNJnSRWUNTQ@XE4K3
+l16
+L14
+Vd9GUC1n7<enmiVPQCRoC40
+R6
+32
+R7
+R8
+R9
+R10
+R11
+!s100 BnQb;BFJ;ek<LF4BnIeIL1
+!i10b 1
+Epe
+Z12 w1431454622
+R1
+R2
+R3
+Z13 8C:/Users/lc599/Desktop/pipeline_mult_modelsim/pe.vhd
+Z14 FC:/Users/lc599/Desktop/pipeline_mult_modelsim/pe.vhd
+l0
+L5
+V5Jl;T1X3b5CXS;T^c]@Kz1
+R6
+32
+Z15 !s108 1431460152.056000
+Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|C:/Users/lc599/Desktop/pipeline_mult_modelsim/pe.vhd|
+Z17 !s107 C:/Users/lc599/Desktop/pipeline_mult_modelsim/pe.vhd|
+R10
+R11
+!s100 kW``_c>S]?>AbYCR<JWQ;1
+!i10b 1
+Abeh
+R1
+R2
+DEx4 work 2 pe 0 22 5Jl;T1X3b5CXS;T^c]@Kz1
+l16
+L13
+V4EAC2>;h<fmU@:K4VX=n:2
+R6
+32
+R15
+R16
+R17
+R10
+R11
+!s100 aaY1P;e`W8WkSPUX0S>nO2
+!i10b 1
+Epipe_mult
+Z18 w1431460145
+R1
+R2
+R3
+Z19 8C:/Users/lc599/Desktop/pipeline_mult_modelsim/pipe_mult.vhd
+Z20 FC:/Users/lc599/Desktop/pipeline_mult_modelsim/pipe_mult.vhd
+l0
+L7
+VTRGZlN:OiM:LgI6Qaf_hO2
+R6
+32
+Z21 !s108 1431460152.257000
+Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|C:/Users/lc599/Desktop/pipeline_mult_modelsim/pipe_mult.vhd|
+Z23 !s107 C:/Users/lc599/Desktop/pipeline_mult_modelsim/pipe_mult.vhd|
+R10
+R11
+!s100 560KOL5aY@h7hK:H`9V_z3
+!i10b 1
+Astruc
+R1
+R2
+DEx4 work 9 pipe_mult 0 22 TRGZlN:OiM:LgI6Qaf_hO2
+l43
+L18
+V98FjHbN;TON4N00U[V1hK2
+R6
+32
+R21
+R22
+R23
+R10
+R11
+!s100 D:C^aWR4?Fbf6I5hJi6nP0
+!i10b 1

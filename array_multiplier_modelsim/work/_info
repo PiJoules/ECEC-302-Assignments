@@ -1,0 +1,82 @@
+m255
+K3
+13
+cModel Technology
+dC:\modeltech64_10.1c\examples
+T_opt
+VT9BQ`d;<8OmIIjXGCknD^2
+04 10 5 work multiplier struc 1
+=4-5cf9dd6dfee3-554cff4d-172-1cc8
+o-quiet -auto_acc_if_foreign -work work
+n@_opt
+OL;O;10.1c;51
+Emultiplier
+Z0 w1431109445
+Z1 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z2 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z3 dC:\Users\lc599\Desktop
+Z4 8C:/Users/lc599/Desktop/Multiplier.vhd
+Z5 FC:/Users/lc599/Desktop/Multiplier.vhd
+l0
+L5
+V99_gT0RKHhgH`ILf?JhZ>2
+Z6 OL;C;10.1c;51
+32
+Z7 !s108 1431109449.387000
+Z8 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|C:/Users/lc599/Desktop/Multiplier.vhd|
+Z9 !s107 C:/Users/lc599/Desktop/Multiplier.vhd|
+Z10 o-work work -2002 -explicit
+Z11 tExplicit 1
+!s100 KRllohiU:<MQZXLn@7on]0
+!i10b 1
+Astruc
+R1
+R2
+DEx4 work 10 multiplier 0 22 99_gT0RKHhgH`ILf?JhZ>2
+l23
+L13
+VLAFd>7RIabXMZQ><8mhSM0
+R6
+32
+R7
+R8
+R9
+R10
+R11
+!s100 gDLWk=ee3ScJfRUK?>ZN43
+!i10b 1
+Epe
+Z12 w1431097269
+R1
+R2
+R3
+Z13 8C:/Users/lc599/Desktop/PE.vhd
+Z14 FC:/Users/lc599/Desktop/PE.vhd
+l0
+L8
+VW]3c5cXgO3m5:ZA2lhDF>2
+R6
+32
+Z15 !s108 1431109449.151000
+Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|C:/Users/lc599/Desktop/PE.vhd|
+Z17 !s107 C:/Users/lc599/Desktop/PE.vhd|
+R10
+R11
+!s100 Y<Aab3[R]llV5B0ZAJjzO0
+!i10b 1
+Aconcurrent
+R1
+R2
+DEx4 work 2 pe 0 22 W]3c5cXgO3m5:ZA2lhDF>2
+l16
+L13
+V@?m0HlhlQiOi;:if>lQ]N2
+R6
+32
+R15
+R16
+R17
+R10
+R11
+!s100 V<^6K65^k`HbXeKh7n_^j2
+!i10b 1

@@ -1,0 +1,432 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Thu May 07 17:48:26 2015
+# Process ID: 3872
+# Log file: C:/Users/lc599/Desktop/array_multiplier/array_multiplier.runs/synth_1/multiplier_test.vds
+# Journal file: C:/Users/lc599/Desktop/array_multiplier/array_multiplier.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source multiplier_test.tcl
+# set_param gui.test TreeTableDev
+# set_param xicom.use_bs_reader 1
+# debug::add_scope template.lib 1
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7a35tcpg236-1
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir C:/Users/lc599/Desktop/array_multiplier/array_multiplier.cache/wt [current_project]
+# set_property parent.project_path C:/Users/lc599/Desktop/array_multiplier/array_multiplier.xpr [current_project]
+# set_property default_lib xil_defaultlib [current_project]
+# set_property target_language Verilog [current_project]
+# read_vhdl -library xil_defaultlib {
+#   C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/PE.vhd
+#   C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd
+#   C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/multiplier_test.vhd
+# }
+# read_xdc {{C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/constrs_1/imports/ECEC 302 Projects/Basys3_Master.xdc}}
+# set_property used_in_implementation false [get_files {{C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/constrs_1/imports/ECEC 302 Projects/Basys3_Master.xdc}}]
+# catch { write_hwdef -file multiplier_test.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top multiplier_test -part xc7a35tcpg236-1
+Command: synth_design -top multiplier_test -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-1223] The version limit for your license is '2014.11' and will expire in -158 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 243.754 ; gain = 75.570
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'multiplier_test' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/multiplier_test.vhd:39]
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'Multiplier' declared at 'C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:4' bound to instance 'm1' of component 'Multiplier' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/multiplier_test.vhd:48]
+INFO: [Synth 8-638] synthesizing module 'Multiplier__parameterized0' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:12]
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'PE' declared at 'C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/PE.vhd:8' bound to instance 'cell' of component 'PE' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:48]
+INFO: [Synth 8-638] synthesizing module 'PE' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/PE.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'PE' (1#1) [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/PE.vhd:13]
+INFO: [Synth 8-3491] module 'PE' declared at 'C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/PE.vhd:8' bound to instance 'cell' of component 'PE' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:71]
+INFO: [Synth 8-3491] module 'PE' declared at 'C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/PE.vhd:8' bound to instance 'cell' of component 'PE' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:71]
+INFO: [Synth 8-3491] module 'PE' declared at 'C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/PE.vhd:8' bound to instance 'cell' of component 'PE' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:71]
+INFO: [Synth 8-3491] module 'PE' declared at 'C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/PE.vhd:8' bound to instance 'cell' of component 'PE' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:64]
+INFO: [Synth 8-3491] module 'PE' declared at 'C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/PE.vhd:8' bound to instance 'cell' of component 'PE' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:48]
+INFO: [Synth 8-3491] module 'PE' declared at 'C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/PE.vhd:8' bound to instance 'cell' of component 'PE' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:83]
+INFO: [Synth 8-3491] module 'PE' declared at 'C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/PE.vhd:8' bound to instance 'cell' of component 'PE' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:83]
+INFO: [Synth 8-3491] module 'PE' declared at 'C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/PE.vhd:8' bound to instance 'cell' of component 'PE' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:83]
+INFO: [Synth 8-3491] module 'PE' declared at 'C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/PE.vhd:8' bound to instance 'cell' of component 'PE' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:64]
+INFO: [Synth 8-3491] module 'PE' declared at 'C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/PE.vhd:8' bound to instance 'cell' of component 'PE' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:48]
+INFO: [Synth 8-3491] module 'PE' declared at 'C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/PE.vhd:8' bound to instance 'cell' of component 'PE' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:83]
+INFO: [Synth 8-3491] module 'PE' declared at 'C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/PE.vhd:8' bound to instance 'cell' of component 'PE' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:83]
+INFO: [Synth 8-3491] module 'PE' declared at 'C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/PE.vhd:8' bound to instance 'cell' of component 'PE' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:83]
+INFO: [Synth 8-3491] module 'PE' declared at 'C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/PE.vhd:8' bound to instance 'cell' of component 'PE' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:64]
+INFO: [Synth 8-3491] module 'PE' declared at 'C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/PE.vhd:8' bound to instance 'cell' of component 'PE' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:48]
+INFO: [Synth 8-3491] module 'PE' declared at 'C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/PE.vhd:8' bound to instance 'cell' of component 'PE' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:83]
+INFO: [Synth 8-3491] module 'PE' declared at 'C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/PE.vhd:8' bound to instance 'cell' of component 'PE' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:83]
+INFO: [Synth 8-3491] module 'PE' declared at 'C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/PE.vhd:8' bound to instance 'cell' of component 'PE' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:83]
+INFO: [Synth 8-3491] module 'PE' declared at 'C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/PE.vhd:8' bound to instance 'cell' of component 'PE' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:64]
+INFO: [Synth 8-3491] module 'PE' declared at 'C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/PE.vhd:8' bound to instance 'cell' of component 'PE' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:56]
+INFO: [Synth 8-3491] module 'PE' declared at 'C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/PE.vhd:8' bound to instance 'cell' of component 'PE' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:56]
+INFO: [Synth 8-3491] module 'PE' declared at 'C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/PE.vhd:8' bound to instance 'cell' of component 'PE' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:56]
+INFO: [Synth 8-3491] module 'PE' declared at 'C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/PE.vhd:8' bound to instance 'cell' of component 'PE' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:56]
+INFO: [Synth 8-3491] module 'PE' declared at 'C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/PE.vhd:8' bound to instance 'cell' of component 'PE' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:78]
+WARNING: [Synth 8-3848] Net p_s[4,4] in module/entity Multiplier__parameterized0 does not have driver. [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:20]
+WARNING: [Synth 8-3848] Net p_s[3,4] in module/entity Multiplier__parameterized0 does not have driver. [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:20]
+WARNING: [Synth 8-3848] Net p_s[2,4] in module/entity Multiplier__parameterized0 does not have driver. [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:20]
+WARNING: [Synth 8-3848] Net p_s[1,4] in module/entity Multiplier__parameterized0 does not have driver. [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:20]
+WARNING: [Synth 8-3848] Net c[0,4] in module/entity Multiplier__parameterized0 does not have driver. [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:20]
+WARNING: [Synth 8-3848] Net p_s[4,3] in module/entity Multiplier__parameterized0 does not have driver. [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:20]
+WARNING: [Synth 8-3848] Net p_s[3,3] in module/entity Multiplier__parameterized0 does not have driver. [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:20]
+WARNING: [Synth 8-3848] Net p_s[2,3] in module/entity Multiplier__parameterized0 does not have driver. [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:20]
+WARNING: [Synth 8-3848] Net p_s[1,3] in module/entity Multiplier__parameterized0 does not have driver. [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:20]
+WARNING: [Synth 8-3848] Net c[0,3] in module/entity Multiplier__parameterized0 does not have driver. [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:20]
+WARNING: [Synth 8-3848] Net p_s[4,2] in module/entity Multiplier__parameterized0 does not have driver. [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:20]
+WARNING: [Synth 8-3848] Net p_s[3,2] in module/entity Multiplier__parameterized0 does not have driver. [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:20]
+WARNING: [Synth 8-3848] Net p_s[2,2] in module/entity Multiplier__parameterized0 does not have driver. [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:20]
+WARNING: [Synth 8-3848] Net p_s[1,2] in module/entity Multiplier__parameterized0 does not have driver. [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:20]
+WARNING: [Synth 8-3848] Net c[0,2] in module/entity Multiplier__parameterized0 does not have driver. [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:20]
+WARNING: [Synth 8-3848] Net p_s[4,1] in module/entity Multiplier__parameterized0 does not have driver. [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:20]
+WARNING: [Synth 8-3848] Net p_s[3,1] in module/entity Multiplier__parameterized0 does not have driver. [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:20]
+WARNING: [Synth 8-3848] Net p_s[2,1] in module/entity Multiplier__parameterized0 does not have driver. [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:20]
+WARNING: [Synth 8-3848] Net p_s[1,1] in module/entity Multiplier__parameterized0 does not have driver. [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:20]
+WARNING: [Synth 8-3848] Net c[0,1] in module/entity Multiplier__parameterized0 does not have driver. [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:20]
+WARNING: [Synth 8-3848] Net p_s[4,0] in module/entity Multiplier__parameterized0 does not have driver. [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:20]
+WARNING: [Synth 8-3848] Net p_s[3,0] in module/entity Multiplier__parameterized0 does not have driver. [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:20]
+WARNING: [Synth 8-3848] Net p_s[2,0] in module/entity Multiplier__parameterized0 does not have driver. [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:20]
+WARNING: [Synth 8-3848] Net p_s[1,0] in module/entity Multiplier__parameterized0 does not have driver. [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'Multiplier__parameterized0' (2#1) [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'multiplier_test' (3#1) [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/multiplier_test.vhd:39]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 277.891 ; gain = 109.707
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin \g1[0].g2[1].g6.cell :ps_in to constant 0 [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:71]
+WARNING: [Synth 8-3295] tying undriven pin \g1[0].g2[2].g6.cell :ps_in to constant 0 [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:71]
+WARNING: [Synth 8-3295] tying undriven pin \g1[0].g2[3].g6.cell :ps_in to constant 0 [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:71]
+WARNING: [Synth 8-3295] tying undriven pin \g1[0].g2[4].g5.cell :ps_in to constant 0 [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:64]
+WARNING: [Synth 8-3295] tying undriven pin \g1[1].g2[0].g3.cell :c_in to constant 0 [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:48]
+WARNING: [Synth 8-3295] tying undriven pin \g1[1].g2[1].g8.cell :ps_in to constant 0 [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:83]
+WARNING: [Synth 8-3295] tying undriven pin \g1[1].g2[2].g8.cell :ps_in to constant 0 [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:83]
+WARNING: [Synth 8-3295] tying undriven pin \g1[1].g2[3].g8.cell :ps_in to constant 0 [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:83]
+WARNING: [Synth 8-3295] tying undriven pin \g1[1].g2[4].g5.cell :ps_in to constant 0 [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:64]
+WARNING: [Synth 8-3295] tying undriven pin \g1[2].g2[0].g3.cell :c_in to constant 0 [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:48]
+WARNING: [Synth 8-3295] tying undriven pin \g1[2].g2[1].g8.cell :ps_in to constant 0 [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:83]
+WARNING: [Synth 8-3295] tying undriven pin \g1[2].g2[2].g8.cell :ps_in to constant 0 [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:83]
+WARNING: [Synth 8-3295] tying undriven pin \g1[2].g2[3].g8.cell :ps_in to constant 0 [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:83]
+WARNING: [Synth 8-3295] tying undriven pin \g1[2].g2[4].g5.cell :ps_in to constant 0 [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:64]
+WARNING: [Synth 8-3295] tying undriven pin \g1[3].g2[0].g3.cell :c_in to constant 0 [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:48]
+WARNING: [Synth 8-3295] tying undriven pin \g1[3].g2[1].g8.cell :ps_in to constant 0 [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:83]
+WARNING: [Synth 8-3295] tying undriven pin \g1[3].g2[2].g8.cell :ps_in to constant 0 [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:83]
+WARNING: [Synth 8-3295] tying undriven pin \g1[3].g2[3].g8.cell :ps_in to constant 0 [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:83]
+WARNING: [Synth 8-3295] tying undriven pin \g1[3].g2[4].g5.cell :ps_in to constant 0 [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:64]
+WARNING: [Synth 8-3295] tying undriven pin \g1[4].g2[0].g4.cell :c_in to constant 0 [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:56]
+WARNING: [Synth 8-3295] tying undriven pin \g1[4].g2[1].g4.cell :ps_in to constant 0 [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:56]
+WARNING: [Synth 8-3295] tying undriven pin \g1[4].g2[2].g4.cell :ps_in to constant 0 [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:56]
+WARNING: [Synth 8-3295] tying undriven pin \g1[4].g2[3].g4.cell :ps_in to constant 0 [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:56]
+WARNING: [Synth 8-3295] tying undriven pin \g1[4].g2[4].g7.cell :ps_in to constant 0 [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:78]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 277.891 ; gain = 109.707
+---------------------------------------------------------------------------------
+Loading clock regions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a35t/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a35t/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.4/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a35t/cpg236/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.4/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/ConfigModes.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/constrs_1/imports/ECEC 302 Projects/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/constrs_1/imports/ECEC 302 Projects/Basys3_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 566.664 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 566.664 ; gain = 398.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 566.664 ; gain = 398.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 566.664 ; gain = 398.480
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3848] Net p_s[4,4] in module/entity Multiplier__parameterized0 does not have driver. [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:20]
+WARNING: [Synth 8-3848] Net p_s[3,4] in module/entity Multiplier__parameterized0 does not have driver. [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:20]
+WARNING: [Synth 8-3848] Net p_s[2,4] in module/entity Multiplier__parameterized0 does not have driver. [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:20]
+WARNING: [Synth 8-3848] Net p_s[1,4] in module/entity Multiplier__parameterized0 does not have driver. [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:20]
+WARNING: [Synth 8-3848] Net c[0,4] in module/entity Multiplier__parameterized0 does not have driver. [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:20]
+WARNING: [Synth 8-3848] Net p_s[4,3] in module/entity Multiplier__parameterized0 does not have driver. [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:20]
+WARNING: [Synth 8-3848] Net p_s[3,3] in module/entity Multiplier__parameterized0 does not have driver. [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:20]
+WARNING: [Synth 8-3848] Net p_s[2,3] in module/entity Multiplier__parameterized0 does not have driver. [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:20]
+WARNING: [Synth 8-3848] Net p_s[1,3] in module/entity Multiplier__parameterized0 does not have driver. [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:20]
+WARNING: [Synth 8-3848] Net c[0,3] in module/entity Multiplier__parameterized0 does not have driver. [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:20]
+WARNING: [Synth 8-3848] Net p_s[4,2] in module/entity Multiplier__parameterized0 does not have driver. [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:20]
+WARNING: [Synth 8-3848] Net p_s[3,2] in module/entity Multiplier__parameterized0 does not have driver. [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:20]
+WARNING: [Synth 8-3848] Net p_s[2,2] in module/entity Multiplier__parameterized0 does not have driver. [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:20]
+WARNING: [Synth 8-3848] Net p_s[1,2] in module/entity Multiplier__parameterized0 does not have driver. [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:20]
+WARNING: [Synth 8-3848] Net c[0,2] in module/entity Multiplier__parameterized0 does not have driver. [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:20]
+WARNING: [Synth 8-3848] Net p_s[4,1] in module/entity Multiplier__parameterized0 does not have driver. [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:20]
+WARNING: [Synth 8-3848] Net p_s[3,1] in module/entity Multiplier__parameterized0 does not have driver. [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:20]
+WARNING: [Synth 8-3848] Net p_s[2,1] in module/entity Multiplier__parameterized0 does not have driver. [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:20]
+WARNING: [Synth 8-3848] Net p_s[1,1] in module/entity Multiplier__parameterized0 does not have driver. [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:20]
+WARNING: [Synth 8-3848] Net c[0,1] in module/entity Multiplier__parameterized0 does not have driver. [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:20]
+WARNING: [Synth 8-3848] Net p_s[4,0] in module/entity Multiplier__parameterized0 does not have driver. [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:20]
+WARNING: [Synth 8-3848] Net p_s[3,0] in module/entity Multiplier__parameterized0 does not have driver. [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:20]
+WARNING: [Synth 8-3848] Net p_s[2,0] in module/entity Multiplier__parameterized0 does not have driver. [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:20]
+WARNING: [Synth 8-3848] Net p_s[1,0] in module/entity Multiplier__parameterized0 does not have driver. [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/Multiplier.vhd:20]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 566.664 ; gain = 398.480
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      1 Bit         XORs := 25    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module multiplier_test 
+Detailed RTL Component Info : 
+Module PE 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      1 Bit         XORs := 1     
+Module Multiplier__parameterized0 
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 566.664 ; gain = 398.480
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 566.664 ; gain = 398.480
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 566.664 ; gain = 398.480
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-3352] multi-driven net c_in with 1st driver pin 'm1/g1[0].g2[0].g3.cell/c_out_inferred/c_out' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/PE.vhd:20]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net c_in with 2nd driver pin 'GND' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/PE.vhd:20]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net c_in with 1st driver pin 'm1/g1[0].g2[1].g6.cell/c_out_inferred/c_out' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/PE.vhd:20]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net c_in with 2nd driver pin 'GND' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/PE.vhd:20]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net c_in with 1st driver pin 'm1/g1[0].g2[2].g6.cell/c_out_inferred/c_out' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/PE.vhd:20]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net c_in with 2nd driver pin 'GND' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/PE.vhd:20]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net c_in with 1st driver pin 'm1/g1[0].g2[3].g6.cell/c_out_inferred/c_out' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/PE.vhd:20]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net c_in with 2nd driver pin 'GND' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/PE.vhd:20]
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 566.664 ; gain = 398.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 566.664 ; gain = 398.480
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 566.664 ; gain = 398.480
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 566.664 ; gain = 398.480
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 566.664 ; gain = 398.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 566.664 ; gain = 398.480
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 566.664 ; gain = 398.480
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 566.664 ; gain = 398.480
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-3352] multi-driven net p_OBUF[4] with 1st driver pin 'm1i_20/O' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/PE.vhd:18]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net p_OBUF[4] with 2nd driver pin 'm1i_16/O' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/PE.vhd:18]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net p_OBUF[4] with 3rd driver pin 'm1i_7/O' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/PE.vhd:18]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net p_OBUF[4] with 4th driver pin 'm1i_4/O' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/PE.vhd:18]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net p_OBUF[4] with 5th driver pin 'm1i_1/O' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/PE.vhd:18]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net p_OBUF[3] with 1st driver pin 'm1i_18/O' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/PE.vhd:18]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net p_OBUF[3] with 2nd driver pin 'm1i_13/O' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/PE.vhd:18]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net p_OBUF[3] with 3rd driver pin 'm1i_6/O' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/PE.vhd:18]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net p_OBUF[3] with 4th driver pin 'm1i_2/O' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/PE.vhd:18]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net p_OBUF[2] with 1st driver pin 'm1i_15/O' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/PE.vhd:18]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net p_OBUF[2] with 2nd driver pin 'm1i_12/O' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/PE.vhd:18]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net p_OBUF[2] with 3rd driver pin 'm1i_3/O' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/PE.vhd:18]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net p_OBUF[5] with 1st driver pin 'm1i_21/O' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/PE.vhd:18]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net p_OBUF[5] with 2nd driver pin 'm1i_17/O' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/PE.vhd:18]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net p_OBUF[5] with 3rd driver pin 'm1i_8/O' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/PE.vhd:18]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net p_OBUF[5] with 4th driver pin 'm1i_5/O' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/PE.vhd:18]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net p_OBUF[6] with 1st driver pin 'm1i_22/O' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/PE.vhd:18]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net p_OBUF[6] with 2nd driver pin 'm1i_19/O' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/PE.vhd:18]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net p_OBUF[6] with 3rd driver pin 'm1i_9/O' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/PE.vhd:18]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net p_OBUF[1] with 1st driver pin 'm1i_14/O' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/PE.vhd:18]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net p_OBUF[1] with 2nd driver pin 'm1i_11/O' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/PE.vhd:18]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net p_OBUF[7] with 1st driver pin 'm1i_24/O' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/PE.vhd:18]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net p_OBUF[7] with 2nd driver pin 'm1i_23/O' [C:/Users/lc599/Desktop/array_multiplier/array_multiplier.srcs/sources_1/new/PE.vhd:18]
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        7|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 566.664 ; gain = 398.480
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 566.664 ; gain = 398.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT2 |    25|
+|2     |IBUF |    10|
+|3     |OBUF |    10|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    45|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 566.664 ; gain = 398.480
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 31 critical warnings and 24 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:17 . Memory (MB): peak = 566.664 ; gain = 82.680
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 566.664 ; gain = 398.480
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+45 Infos, 72 Warnings, 31 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 566.664 ; gain = 377.570
+# write_checkpoint -noxdef multiplier_test.dcp
+# catch { report_utilization -file multiplier_test_utilization_synth.rpt -pb multiplier_test_utilization_synth.pb }
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 566.664 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu May 07 17:48:50 2015...
