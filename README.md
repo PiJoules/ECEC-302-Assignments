@@ -14,7 +14,7 @@ Useful stuff for when you can't use StackOverflow
 		end if; -- illegal
 
 		z <= temp; -- legal
-	end FUNCTIONS;
+	end beh;
   ````
 
 ## [Operators](http://www.csee.umbc.edu/portal/help/VHDL/operator.html)
