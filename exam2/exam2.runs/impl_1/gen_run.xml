@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1432243048">
+  <File Type="PWROPT-DCP" Name="max_array_5x3_pwropt.dcp"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
+  <File Type="PLACE-DCP" Name="max_array_5x3_placed.dcp"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/impl_1/sources.xml"/>
+  <File Type="PWROPT-DRC" Name="max_array_5x3_drc_pwropted.rpt"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="max_array_5x3_timing_summary_routed.rpt"/>
+  <File Type="PA-TCL" Name="max_array_5x3.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+  <File Type="OPT-DCP" Name="max_array_5x3_opt.dcp"/>
+  <File Type="OPT-DRC" Name="max_array_5x3_drc_opted.rpt"/>
+  <File Type="PLACE-IO" Name="max_array_5x3_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="max_array_5x3_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="max_array_5x3_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="max_array_5x3_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="max_array_5x3_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="max_array_5x3_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="max_array_5x3_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="max_array_5x3_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="max_array_5x3_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="max_array_5x3_drc_physopted.rpt"/>
+  <File Type="ROUTE-DCP" Name="max_array_5x3_routed.dcp"/>
+  <File Type="ROUTE-DRC" Name="max_array_5x3_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="max_array_5x3_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="max_array_5x3_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="max_array_5x3_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="max_array_5x3_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="max_array_5x3_route_status.pb"/>
+  <File Type="ROUTE-TIMING-PB" Name="max_array_5x3_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="max_array_5x3_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="max_array_5x3_incremental_reuse_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="max_array_5x3_postroute_physopt.dcp"/>
+  <File Type="RDI-RDI" Name="max_array_5x3.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="max_array_5x3_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="max_array_5x3_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="max_array_5x3_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="max_array_5x3.bit"/>
+  <File Type="BG-BIN" Name="max_array_5x3.bin"/>
+  <File Type="BITSTR-MSK" Name="max_array_5x3.msk"/>
+  <File Type="BITSTR-RBT" Name="max_array_5x3.rbt"/>
+  <File Type="BITSTR-NKY" Name="max_array_5x3.nky"/>
+  <File Type="BITSTR-BMM" Name="max_array_5x3_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="max_array_5x3.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="max_array_5x3.sysdef"/>
+  <File Type="BG-BGN" Name="max_array_5x3.bgn"/>
+  <File Type="BG-DRC" Name="max_array_5x3.drc"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/pe.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/max_array.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/max_array_5x3.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="max_array_5x3"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Desktop/Basys3_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Basys3_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1429819826"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2014"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,19 @@
+C:/Users/lc599/Desktop/exam2modelsim/DFF.vhd {1 {vcom -work work -2002 -explicit -vopt {C:\Users\lc599\Desktop\exam2modelsim\DFF.vhd}
+Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity DFF
+-- Compiling architecture beh of DFF
+
+} {} {}} C:/Users/lc599/Desktop/exam2modelsim/DFF_tb.vhd {2 {vcom -work work -2002 -explicit -vopt C:/Users/lc599/Desktop/exam2modelsim/DFF_tb.vhd
+Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity DFF_tb
+-- Compiling architecture beh of DFF_tb
+** Warning: C:/Users/lc599/Desktop/exam2modelsim/DFF_tb.vhd(23): (vcom-1236) Shared variables must be of a protected type.
+
+
+} {} {}}

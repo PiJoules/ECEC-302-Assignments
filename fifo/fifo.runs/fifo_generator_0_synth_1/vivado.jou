@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Tue May 19 11:45:51 2015
+# Process ID: 4252
+# Log file: C:/Users/lc599.DREXEL/Desktop/fifo/fifo.runs/fifo_generator_0_synth_1/fifo_generator_0.vds
+# Journal file: C:/Users/lc599.DREXEL/Desktop/fifo/fifo.runs/fifo_generator_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source fifo_generator_0.tcl

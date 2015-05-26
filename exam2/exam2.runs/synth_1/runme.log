@@ -1,0 +1,334 @@
+
+*** Running vivado
+    with args -log max_array_5x3.vds -m64 -mode batch -messageDb vivado.pb -source max_array_5x3.tcl
+
+
+****** Vivado v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source max_array_5x3.tcl
+# set_param gui.test TreeTableDev
+# debug::add_scope template.lib 1
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7a35tcpg236-1
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir C:/Users/lc599/Desktop/exam2/exam2.cache/wt [current_project]
+# set_property parent.project_path C:/Users/lc599/Desktop/exam2/exam2.xpr [current_project]
+# set_property default_lib xil_defaultlib [current_project]
+# set_property target_language Verilog [current_project]
+# read_vhdl -library xil_defaultlib {
+#   C:/Users/lc599/Desktop/exam2/exam2.srcs/sources_1/new/pe.vhd
+#   C:/Users/lc599/Desktop/exam2/exam2.srcs/sources_1/new/max_array.vhd
+#   C:/Users/lc599/Desktop/exam2/exam2.srcs/sources_1/new/max_array_5x3.vhd
+# }
+# read_xdc C:/Users/lc599/Desktop/exam2/exam2.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc
+# set_property used_in_implementation false [get_files C:/Users/lc599/Desktop/exam2/exam2.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc]
+# catch { write_hwdef -file max_array_5x3.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top max_array_5x3 -part xc7a35tcpg236-1
+Command: synth_design -top max_array_5x3 -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-1223] The version limit for your license is '2014.11' and will expire in -172 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 243.879 ; gain = 75.520
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'max_array_5x3' [C:/Users/lc599/Desktop/exam2/exam2.srcs/sources_1/new/max_array_5x3.vhd:16]
+	Parameter L bound to: 5 - type: integer 
+	Parameter N bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'max_array' declared at 'C:/Users/lc599/Desktop/exam2/exam2.srcs/sources_1/new/max_array.vhd:34' bound to instance 'U1' of component 'max_array' [C:/Users/lc599/Desktop/exam2/exam2.srcs/sources_1/new/max_array_5x3.vhd:28]
+INFO: [Synth 8-638] synthesizing module 'max_array__parameterized0' [C:/Users/lc599/Desktop/exam2/exam2.srcs/sources_1/new/max_array.vhd:43]
+	Parameter L bound to: 5 - type: integer 
+	Parameter N bound to: 3 - type: integer 
+	Parameter n bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'pe' declared at 'C:/Users/lc599/Desktop/exam2/exam2.srcs/sources_1/new/pe.vhd:34' bound to instance 'cell' of component 'pe' [C:/Users/lc599/Desktop/exam2/exam2.srcs/sources_1/new/max_array.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'pe__parameterized0' [C:/Users/lc599/Desktop/exam2/exam2.srcs/sources_1/new/pe.vhd:43]
+	Parameter n bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'pe__parameterized0' (1#1) [C:/Users/lc599/Desktop/exam2/exam2.srcs/sources_1/new/pe.vhd:43]
+	Parameter n bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'pe' declared at 'C:/Users/lc599/Desktop/exam2/exam2.srcs/sources_1/new/pe.vhd:34' bound to instance 'cell' of component 'pe' [C:/Users/lc599/Desktop/exam2/exam2.srcs/sources_1/new/max_array.vhd:62]
+	Parameter n bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'pe' declared at 'C:/Users/lc599/Desktop/exam2/exam2.srcs/sources_1/new/pe.vhd:34' bound to instance 'cell' of component 'pe' [C:/Users/lc599/Desktop/exam2/exam2.srcs/sources_1/new/max_array.vhd:62]
+	Parameter n bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'pe' declared at 'C:/Users/lc599/Desktop/exam2/exam2.srcs/sources_1/new/pe.vhd:34' bound to instance 'cell' of component 'pe' [C:/Users/lc599/Desktop/exam2/exam2.srcs/sources_1/new/max_array.vhd:62]
+	Parameter n bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'pe' declared at 'C:/Users/lc599/Desktop/exam2/exam2.srcs/sources_1/new/pe.vhd:34' bound to instance 'cell' of component 'pe' [C:/Users/lc599/Desktop/exam2/exam2.srcs/sources_1/new/max_array.vhd:65]
+INFO: [Synth 8-256] done synthesizing module 'max_array__parameterized0' (2#1) [C:/Users/lc599/Desktop/exam2/exam2.srcs/sources_1/new/max_array.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'max_array_5x3' (3#1) [C:/Users/lc599/Desktop/exam2/exam2.srcs/sources_1/new/max_array_5x3.vhd:16]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 278.055 ; gain = 109.695
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin \g1[4].g4.cell :y[2] to constant 0 [C:/Users/lc599/Desktop/exam2/exam2.srcs/sources_1/new/max_array.vhd:65]
+WARNING: [Synth 8-3295] tying undriven pin \g1[4].g4.cell :y[1] to constant 0 [C:/Users/lc599/Desktop/exam2/exam2.srcs/sources_1/new/max_array.vhd:65]
+WARNING: [Synth 8-3295] tying undriven pin \g1[4].g4.cell :y[0] to constant 0 [C:/Users/lc599/Desktop/exam2/exam2.srcs/sources_1/new/max_array.vhd:65]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 278.055 ; gain = 109.695
+---------------------------------------------------------------------------------
+Loading clock regions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a35t/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a35t/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.4/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a35t/cpg236/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.4/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/ConfigModes.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/lc599/Desktop/exam2/exam2.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/lc599/Desktop/exam2/exam2.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 553.449 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 553.449 ; gain = 385.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 553.449 ; gain = 385.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 553.449 ; gain = 385.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 553.449 ; gain = 385.090
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module max_array_5x3 
+Detailed RTL Component Info : 
+Module pe__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+Module max_array__parameterized0 
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 553.449 ; gain = 385.090
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 553.449 ; gain = 385.090
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 553.449 ; gain = 385.090
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 553.449 ; gain = 385.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 553.449 ; gain = 385.090
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 553.449 ; gain = 385.090
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 553.449 ; gain = 385.090
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 553.449 ; gain = 385.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 553.449 ; gain = 385.090
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 560.406 ; gain = 392.047
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 560.406 ; gain = 392.047
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 560.406 ; gain = 392.047
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 560.406 ; gain = 392.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT2 |     4|
+|3     |LUT4 |     4|
+|4     |LUT6 |     4|
+|5     |FDRE |    15|
+|6     |IBUF |    16|
+|7     |OBUF |     3|
++------+-----+------+
+
+Report Instance Areas: 
++------+--------------------+--------------------------+------+
+|      |Instance            |Module                    |Cells |
++------+--------------------+--------------------------+------+
+|1     |top                 |                          |    47|
+|2     |  U1                |max_array__parameterized0 |    27|
+|3     |    \g1[0].g2.cell  |pe__parameterized0        |     6|
+|4     |    \g1[1].g3.cell  |pe__parameterized0_0      |     6|
+|5     |    \g1[2].g3.cell  |pe__parameterized0_1      |     6|
+|6     |    \g1[3].g3.cell  |pe__parameterized0_2      |     6|
+|7     |    \g1[4].g4.cell  |pe__parameterized0_3      |     3|
++------+--------------------+--------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 560.406 ; gain = 392.047
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:19 . Memory (MB): peak = 560.406 ; gain = 89.055
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 560.406 ; gain = 392.047
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+25 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 560.406 ; gain = 370.566
+# write_checkpoint -noxdef max_array_5x3.dcp
+# catch { report_utilization -file max_array_5x3_utilization_synth.rpt -pb max_array_5x3_utilization_synth.pb }
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 560.406 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu May 21 17:17:56 2015...
