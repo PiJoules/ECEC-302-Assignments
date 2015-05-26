@@ -49,16 +49,21 @@ architecture Behavioral of radixR_adder is
     temp_x <= '0' & x; -- extend operands to
     temp_y <= '0' & y; -- n+1 bits
     
-    process (en)
-        variable temp: std_logic_vector(n downto 0); -- n+1 bit vector
-        
+    process (ck)        
         begin
         
-        if en='1' and en'event then
+        if ck='1' and ck'event then
             if reset='1' then
-                n_s <= no_carry;
+                temp_x <= '0' & x;
+                temp_y <= '0' & y;
+                z <= std_logic_vector(to_unsigned(0, z'length));
             else
-                
+                if btn1='1' then 
+                    -- load values for x and y
+                    
+                elsif btn2='1'
+                    -- find and display the sum
+                end if;
             end if;
         end if;
     end process;

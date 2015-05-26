@@ -7,7 +7,7 @@ Useful stuff for when you can't use StackOverflow
   - Essentially, stuff like `if`, `for`, or `while` statements cannot be used outside of a process. Outsde of a process, inside the architecture, after the begin statement, you can only port variables or values to other vaiables
   - Example:
   ```vhdl
-	architecture FUNCTIONS of PAR is
+	architecture beh of whatever is
 	begin
 		if condition then
 			-- do something
@@ -87,5 +87,42 @@ end FUNCTIONS;
 ## [Enums](http://web.engr.oregonstate.edu/~sllu/vhdl/lec2e.html)
 ```vhdl
 TYPE my_type IS (reset, idle, rw_cycle, int_cycle);
+SIGNAL state : my_state;
+-- or
+Signal state : my_state := idel;
+```
 
+## Length of std_logic_vector
+```vhdl
+variable len: integer;
+signal arr: std_logic_vector(3 downto 0) := "1010";
+begin
+len := arr'length; -- 10
+```
+
+## [Converting from std_logic_vector to integer and back](http://stackoverflow.com/questions/16595894/how-to-typecast-integer-to-unsigned-in-vhdl)
+```vhdl
+use ieee.numeric_std.all; -- required
+
+signal src_vec: std_logic_vector(3 downto 0) := "0101";
+signal dest_vec: std_logic_vector(3 downto 0);
+variable src_int: integer;
+begin
+
+-- std_logic_vector to int
+src_int := to_integer(unsigned(src_vec)); -- unsigned can be replaced with signed
+
+-- int to std_logic_vector
+dest_vec <= std_logic_vector(to_unsigned(src_int, dest_vec'length));
+```
+
+## [If, elsif, else](http://www.ics.uci.edu/~jmoorkan/vhdlref/ifs.html)
+```vhdl
+if condition_1 then
+	sequential statements
+elsif condition2 then
+	sequential statements
+else
+	sequential statements
+end if;
 ```
