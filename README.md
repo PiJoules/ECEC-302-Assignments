@@ -11,7 +11,7 @@ Useful stuff for when you can't use StackOverflow
 - "result same" means the result is the same as the left operand
 
 | Operator 			| Description 						| Example 								| Return Type
-|-------------------|-----------------------------------|---------------------------------------|---------------
+|:------------------|:----------------------------------|:--------------------------------------|:--------------
 | **   				| exponentiation  					| numeric ** integer 					| result numeric
 | abs  				| absolute value  					| abs numeric							| result numeric
 | not  				| complement      					| not logic or boolean					| result same
