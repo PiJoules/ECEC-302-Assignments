@@ -2,17 +2,19 @@
 Useful stuff for when you can't use StackOverflow
 
 ## [Operators](http://www.csee.umbc.edu/portal/help/VHDL/operator.html)
-Highest precedence first,
-left to right within same precedence group,
-use parenthesis to control order.
-Unary operators take an operand on the right.
-"result same" means the result is the same as the right operand.
-Binary operators take an operand on the left and right.
-"result same" means the result is the same as the left operand.
+- Highest precedence first
+- left to right within same precedence group
+- use parenthesis to control order
+- Unary operators take an operand on the right
+- "result same" means the result is the same as the right operand
+- Binary operators take an operand on the left and right
+- "result same" means the result is the same as the left operand
 
-**   exponentiation,  numeric ** integer,  result numeric
-abs  absolute value,  abs numeric,  result numeric
-not  complement,      not logic or boolean,  result same
+| Operator 			| Description 		| Example 				| Return Type
+|-------------------|-------------------|-----------------------|---------------
+| **   				| exponentiation  	| numeric ** integer 	| result numeric
+| abs  				| absolute value  	| abs numeric			| result numeric
+| not  				| complement      	| not logic or boolean	|result same
 
 *    multiplication,  numeric * numeric,  result numeric
 /    division,        numeric / numeric,  result numeric
@@ -24,7 +26,8 @@ rem  remainder,       integer rem integer,  result integer
 
 +    addition,        numeric + numeric,  result numeric
 -    subtraction,     numeric - numeric,  result numeric
-&    concatenation,   array or element & array or element, result array
+&    concatenation,   array or element & array or element,
+                        result array
 
 sll  shift left logical,     logical array sll integer,  result same
 srl  shift right logical,    logical array srl integer,  result same
