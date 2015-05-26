@@ -1,6 +1,22 @@
 # VHDL Syntax and other things
 Useful stuff for when you can't use StackOverflow
 
+## Stuff I noticed and bugged me as I learned more VHDL
+- VHDL code is **case insensitive**, but constrants given in a .xcd file are **case sensistive**
+- You cannot have 'dynamic' code outside of a process after the begin statement in an architecture
+  - Essentially, stuff like `if`, `for`, or `while` statements cannot be used outside of a process. Outsde of a process, inside the architecture, after the begin statement, you can only port variables or values to other vaiables
+  - Example:
+  ```vhdl
+	architecture FUNCTIONS of PAR is
+	begin
+		if condition then
+			-- do something
+		end if; -- illegal
+
+		z <= temp; -- legal
+	end FUNCTIONS;
+  ````
+
 ## [Operators](http://www.csee.umbc.edu/portal/help/VHDL/operator.html)
 - Highest precedence first
 - left to right within same precedence group
@@ -66,4 +82,10 @@ begin
 	PARITY_BYTE <= PARITY(DATA_BYTE);
 	PARITY_WORD <= PARITY(DATA_WORD);
 end FUNCTIONS;
+```
+
+## [Enums](http://web.engr.oregonstate.edu/~sllu/vhdl/lec2e.html)
+```vhdl
+TYPE my_type IS (reset, idle, rw_cycle, int_cycle);
+
 ```

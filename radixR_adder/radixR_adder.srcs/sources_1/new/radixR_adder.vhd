@@ -21,11 +21,27 @@ end radixR_adder;
 architecture Behavioral of radixR_adder is
     signal temp_x, temp_y : std_logic_vector(n downto 0) ; -- n+1 bit vector
     
-    function radix_to_int(r: integer, num: integer) return integer is
-        
+    --get_Nth_digit(123, 10, 1) -> 3
+    --get_Nth_digit(123, 10, 2) -> 2
+    --get_Nth_digit(123, 10, 3) -> 1
+    function get_Nth_digit(number: integer, base: integer, n: integer) return integer is
         begin
-    
-        
+        return (number / base ** (n-1)) mod base;
+    end get_Nth_digit;
+
+    -- Loop convert the num in a given base to the decimal reporesentation 
+    function radix_to_int(r: integer, num: integer) return integer is
+        variable i: integer:= 0;
+        variable sum: integer := 0;
+        variable digit: integer;
+        begin
+        while num > 0 Loop
+            digit := num mod 10;
+            sum := sum + digit * (r**i);
+            num := num - digit * 10;
+            i := i + 1;
+        end loop;
+        return sum;
     end radix_to_int;
 
     begin
