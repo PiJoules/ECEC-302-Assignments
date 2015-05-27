@@ -1,0 +1,77 @@
+
+*** Running vivado
+    with args -log radixR_adder_testbench.vds -m64 -mode batch -messageDb vivado.pb -source radixR_adder_testbench.tcl
+
+
+****** Vivado v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source radixR_adder_testbench.tcl
+# set_param gui.test TreeTableDev
+# debug::add_scope template.lib 1
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7a35tcpg236-1
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir C:/Users/lc599/Desktop/radixR_adder/radixR_adder.cache/wt [current_project]
+# set_property parent.project_path C:/Users/lc599/Desktop/radixR_adder/radixR_adder.xpr [current_project]
+# set_property default_lib xil_defaultlib [current_project]
+# set_property target_language Verilog [current_project]
+# read_vhdl -library xil_defaultlib {
+#   C:/Users/lc599/Desktop/radixR_adder/radixR_adder.srcs/sources_1/new/radixR_adder.vhd
+#   C:/Users/lc599/Desktop/radixR_adder/radixR_adder.srcs/sources_1/new/radixR_adder_testbench.vhd
+# }
+# read_xdc C:/Users/lc599/Desktop/radixR_adder/radixR_adder.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc
+# set_property used_in_implementation false [get_files C:/Users/lc599/Desktop/radixR_adder/radixR_adder.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc]
+# catch { write_hwdef -file radixR_adder_testbench.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top radixR_adder_testbench -part xc7a35tcpg236-1
+Command: synth_design -top radixR_adder_testbench -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-1223] The version limit for your license is '2014.11' and will expire in -177 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 243.316 ; gain = 75.555
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'radixR_adder_testbench' [C:/Users/lc599/Desktop/radixR_adder/radixR_adder.srcs/sources_1/new/radixR_adder_testbench.vhd:15]
+	Parameter r bound to: 5 - type: integer 
+	Parameter n bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'radixR_adder' declared at 'C:/Users/lc599/Desktop/radixR_adder/radixR_adder.srcs/sources_1/new/radixR_adder.vhd:8' bound to instance 'U1' of component 'radixR_adder' [C:/Users/lc599/Desktop/radixR_adder/radixR_adder.srcs/sources_1/new/radixR_adder_testbench.vhd:29]
+INFO: [Synth 8-638] synthesizing module 'radixR_adder__parameterized0' [C:/Users/lc599/Desktop/radixR_adder/radixR_adder.srcs/sources_1/new/radixR_adder.vhd:20]
+	Parameter r bound to: 5 - type: integer 
+	Parameter n bound to: 3 - type: integer 
+ERROR: [Synth 8-561] range expression could not be resolved to a constant [C:/Users/lc599/Desktop/radixR_adder/radixR_adder.srcs/sources_1/new/radixR_adder.vhd:28]
+ERROR: [Synth 8-285] failed synthesizing module 'radixR_adder__parameterized0' [C:/Users/lc599/Desktop/radixR_adder/radixR_adder.srcs/sources_1/new/radixR_adder.vhd:20]
+ERROR: [Synth 8-285] failed synthesizing module 'radixR_adder_testbench' [C:/Users/lc599/Desktop/radixR_adder/radixR_adder.srcs/sources_1/new/radixR_adder_testbench.vhd:15]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 277.551 ; gain = 109.789
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+    while executing
+"rt::run_rtlelab -module $rt::top"
+    invoked from within
+"if {$rt::useElabCache == false} {
+      rt::run_rtlelab -module $rt::top
+    }"
+    ("uplevel" body line 41)
+    invoked from within
+"uplevel #0 {
+    set ::env(BUILTIN_SYNTH) true
+    source $::env(HRT_TCL_PATH)/rtSynthPrep.tcl
+    rt::HARTNDb_resetJobStats
+    rt::HARTNDb_startJobS..."
+INFO: [Common 17-83] Releasing license: Synthesis
+6 Infos, 0 Warnings, 0 Critical Warnings and 4 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+
+    while executing
+"source -notrace {./.Xil/Vivado-14324-ECE-RM215-01/realtime\radixR_adder_testbench.tcl}"
+    invoked from within
+"synth_design -top radixR_adder_testbench -part xc7a35tcpg236-1"
+    (file "radixR_adder_testbench.tcl" line 25)
+INFO: [Common 17-206] Exiting Vivado at Tue May 26 17:38:22 2015...

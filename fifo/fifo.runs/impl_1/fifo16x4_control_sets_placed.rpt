@@ -1,0 +1,65 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (win64) Build 1071353 Tue Nov 18 18:29:27 MST 2014
+| Date         : Tue May 19 14:08:10 2015
+| Host         : ece-rm214-07 running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file fifo16x4_control_sets_placed.rpt
+| Design       : fifo16x4
+| Device       : xc7a35t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    12 |
+| Minimum Number of register sites lost to control set restrictions |    45 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              10 |            4 |
+| No           | No                    | Yes                    |              11 |            4 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |              32 |            8 |
+| Yes          | No                    | Yes                    |              18 |            6 |
+| Yes          | Yes                   | No                     |               4 |            2 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++---------------+----------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+------------------+----------------+
+|  Clock Signal |                                   Enable Signal                                  |                                       Set/Reset Signal                                      | Slice Load Count | Bel Load Count |
++---------------+----------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+------------------+----------------+
+|  en_BUFG      | U1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg_d1                   | reset_IBUF                                                                                  |                1 |              1 |
+|  en_BUFG      | U1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/wr_rst_asreg_d1                   | reset_IBUF                                                                                  |                1 |              1 |
+|  en_BUFG      |                                                                                  | U1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/n_0_ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1 |                1 |              2 |
+|  en_BUFG      |                                                                                  | U1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/n_0_ngwrdrst.grst.g7serrst.wr_rst_reg[1]_i_1 |                1 |              2 |
+|  en_BUFG      |                                                                                  | U1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/O1[0]                                        |                1 |              2 |
+|  en_BUFG      |                                                                                  |                                                                                             |                2 |              4 |
+|  en_BUFG      | U1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/O1[0] | U1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/Q[0]                                         |                2 |              4 |
+|  en_BUFG      |                                                                                  | U1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/Q[1]                                         |                1 |              5 |
+|  ck_IBUF_BUFG |                                                                                  |                                                                                             |                2 |              6 |
+|  en_BUFG      | U1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/E[0]  | U1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/Q[1]                                         |                2 |              8 |
+|  en_BUFG      | U1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/E[0]  | U1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/O1[1]                                        |                2 |              8 |
+|  ck_IBUF_BUFG | n_0_counter[0]_i_1                                                               |                                                                                             |                8 |             32 |
++---------------+----------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+------------------+----------------+
+
+
