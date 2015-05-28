@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Thu May 14 15:08:20 2015
+# Process ID: 6988
+# Log file: C:/Users/lc599/Desktop/RAM/RAM.runs/impl_1/block_RAM16x4.vdi
+# Journal file: C:/Users/lc599/Desktop/RAM/RAM.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source block_RAM16x4.tcl -notrace

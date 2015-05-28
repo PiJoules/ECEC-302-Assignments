@@ -1,0 +1,51 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Wed May 27 14:26:30 2015
+# Process ID: 11168
+# Log file: C:/Users/lc599.DREXEL/Desktop/Accumulator/Accumulator.runs/impl_1/acc.vdi
+# Journal file: C:/Users/lc599.DREXEL/Desktop/Accumulator/Accumulator.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source acc.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/lc599.DREXEL/Desktop/Accumulator/Accumulator.runs/c_accum_0_synth_1/c_accum_0.dcp' for cell 'U1'
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2014.4
+Loading clock regions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a35t/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a35t/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.4/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a35t/cpg236/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.4/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/ConfigModes.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+Parsing XDC File [C:/Users/lc599.DREXEL/Desktop/Accumulator/Accumulator.srcs/constrs_1/imports/ECEC-302-Assignments/Basys3_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'add'. [C:/Users/lc599.DREXEL/Desktop/Accumulator/Accumulator.srcs/constrs_1/imports/ECEC-302-Assignments/Basys3_Master.xdc:117]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lc599.DREXEL/Desktop/Accumulator/Accumulator.srcs/constrs_1/imports/ECEC-302-Assignments/Basys3_Master.xdc:117]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'add'. [C:/Users/lc599.DREXEL/Desktop/Accumulator/Accumulator.srcs/constrs_1/imports/ECEC-302-Assignments/Basys3_Master.xdc:118]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lc599.DREXEL/Desktop/Accumulator/Accumulator.srcs/constrs_1/imports/ECEC-302-Assignments/Basys3_Master.xdc:118]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+Finished Parsing XDC File [C:/Users/lc599.DREXEL/Desktop/Accumulator/Accumulator.srcs/constrs_1/imports/ECEC-302-Assignments/Basys3_Master.xdc]
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/lc599.DREXEL/Desktop/Accumulator/Accumulator.runs/c_accum_0_synth_1/c_accum_0.dcp'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-1223] The version limit for your license is '2014.11' and will expire in -178 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.080 . Memory (MB): peak = 445.652 ; gain = 0.000

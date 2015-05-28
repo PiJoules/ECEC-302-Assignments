@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Wed May 27 19:37:45 2015
+# Process ID: 5724
+# Log file: C:/Users/lc599.DREXEL/Desktop/radixR_adder_2/radixR_adder_2.runs/impl_1/radixr_adder.vdi
+# Journal file: C:/Users/lc599.DREXEL/Desktop/radixR_adder_2/radixR_adder_2.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source radixr_adder.tcl -notrace

@@ -1,0 +1,13 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity DFF is
+  port (
+    x, ck: in std_logic;
+    z: out std_logic
+  );
+end DFF;
+
+architecture beh of DFF is
+  
+end beh;
